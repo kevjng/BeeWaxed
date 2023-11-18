@@ -16,8 +16,8 @@ const router = useRouter()
 
           <Image
               src="/images/logo.png"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="Picture of the author"
           />
 
