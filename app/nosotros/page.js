@@ -1,7 +1,9 @@
 
 const Nosotros = () => {
   return (
-    <div>Nosotros</div>
+    <div className="mt-20 container h-full w-full py-20 bg-red-500">
+      Nosotros
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 
 import NavBar from "./components/ui/navbar/Navbar";
-import Tienda from "./tienda/page";
+import Tienda from "./tienda/[categoria]/page";
 import Contacto from "./contacto/page";
 
 export default function Home() {
