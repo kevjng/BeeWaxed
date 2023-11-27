@@ -3,6 +3,23 @@ import NavBar from "./components/ui/navbar/Navbar";
 import Tienda from "./tienda/[categoria]/page";
 import Contacto from "./contacto/page";
 
+
+
+export const metadata = {
+  title: 'BeeWaxed - Página inicio',
+  description: 'App de BeeWaxed 2023',
+  keywords: ['BeeWaxed','Plantas','Gorras', 'Llaveros'],
+  openGraph: {
+    title: 'BeeWaxed - Página inicio',
+    description: 'App de BeeWaxed 2023',
+    type: 'article',
+    authors: ['kvj'],
+  }
+
+}
+  
+
+
 export default function Home() {
   return (
      

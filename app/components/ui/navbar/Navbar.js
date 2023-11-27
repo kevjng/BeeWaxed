@@ -67,7 +67,7 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-600  border-yellow-900  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  <Link href="/tienda/sadad" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/tienda/all" onClick={() => setNavbar(!navbar)}>
                     Tienda
                   </Link>
                 </li>

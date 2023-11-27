@@ -13,7 +13,7 @@ const NotFound = () => {
         Lo sentimos, la página que estás buscando no existe.
       </p>
       <Image
-        src="/images/logo.png"
+        src="/imgs/logo.png"
         width={400}
         height={400}
         alt="Logo de la empresa"

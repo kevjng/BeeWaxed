@@ -4,7 +4,7 @@ const Nosotros = () => {
   return (
     <div className="container mx-auto mt-20 p-10 bg-gray-100">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-md shadow-lg">
-        <h1 className="text-3xl font-bold mb-6">Sobre Nosotros</h1>
+        <h1 className="text-3xl font-bold mb-6 text-black">Sobre Nosotros</h1>
         <p className="text-gray-700 mb-4">
           Bienvenido a nuestro sitio web. En "Nosotros", nos apasiona ofrecer las mejores plantas para tu hogar. Con una amplia variedad de opciones, desde plantas luminosas hasta plantas vintage, estamos seguros de que encontrarás la planta perfecta para dar vida a tu espacio.
         </p>

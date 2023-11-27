@@ -2,13 +2,9 @@
 import * as React from "react";
 import { Inter } from 'next/font/google'
 
-
-
-
 import './globals.css'
 
 import Navbar from "./components/ui/navbar/Navbar"
-
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,6 +23,7 @@ export default function RootLayout({ children }) {
         <div className="flex items-start justify-center">
         
           <Navbar className="my-20"></Navbar>
+          
           {children}
         
           </div>
