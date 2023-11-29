@@ -27,11 +27,11 @@ function NavBar() {
               {/* MENU HAMBURGUESA PARA MOVIL */}
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="text-gray-700 rounded-md outline-none transition ease-in-out hover:scale-110 duration-100"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/images/close.svg" width={30} height={30} alt="close" />
+                    <Image src="/images/close.svg" width={35} height={35} alt="close" />
                   ) : (
                     <Image
                       src="/images/hamburger-menu.svg"
