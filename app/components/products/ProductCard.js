@@ -12,7 +12,7 @@ const ProductCard = ({ item }) => {
                     <div className="">
                         <Image
                             alt={item.title}
-                            src={`/imgs/products/${item.img}`}
+                            src={`/images/products/${item.img}`}
                             
                         />
 
