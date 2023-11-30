@@ -15,49 +15,71 @@ const Contacto = () => {
 
 
   return (
-    <div className="container my-20 flex flex-col gap-4">
-      <div className="flex flex-col gap-2">
-        <h3 className="text-default-500 text-large">
-          Formulario de contacto
-        </h3>
-        <form className="flex w-full flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4">
+    <div className="container">
 
-          <Input
-            type="text"
-            label="Nombre"
-            labelPlacement={"inside"}
-            description={"Ingresa tu Nombre"}
-          />
-          <Input
-            type="email"
-            label="Email"
-            labelPlacement={"inside"}
-            description={"Ingresa tu email"}
-          />
-          <Input
-            type="text"
-            label="Numero"
-            labelPlacement={"inside"}
-            description={"Ingresa tu Numero"}
-          />
-          
-        </form>
-        <div className="container flex mt-5">
-          <Textarea
-            label="Mensaje"
-            placeholder="Dejanos tu mensaje"
-            className="max-w-xs"
-          />
+
+
+      <div className="container my-20 md:px-8 bg-slate-00 rounded-3xl">
+        <div className="p-8 rounded-md justify-center text-center">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl mt-20">Contactanos</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-400">Nos pondremos en contacto a la velocidad de la luz.</p>
+          </div>
         </div>
-        <div className="container my-5">
-          <Button size="lg" shadow color="warning">
-            Enviar
-          </Button>
-          
+        <div className="flex flex-col gap-2">
+          <h3 className="text-default-400 text-large">
+            Formulario de contacto
+          </h3>
+          <form className="flex flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4 mx-4">
+
+            <Input
+              type="text"
+              label="Nombre"
+              labelPlacement={"inside"}
+              description={"Ingresa tu Nombre"}
+              className="my-4"
+            />
+            <Input
+              type="email"
+              label="Email"
+              labelPlacement={"inside"}
+              description={"Ingresa tu email"}
+              className="my-4"
+            />
+            <Input
+              type="text"
+              label="Numero"
+              labelPlacement={"inside"}
+              className="my-4"
+              description={"Ingresa tu Numero"}
+            />
+
+          </form>
+          <div className="flex my-5 mx-4">
+            <Textarea
+              label="Mensaje"
+              placeholder="Dejanos tu mensaje"
+              className="my-4"
+            />
+          </div>
+          <div className="my-5">
+            <Button size="lg" shadow color="warning" className="text-white">
+              Enviar
+            </Button>
+
+          </div>
         </div>
       </div>
-    </div>
 
+      <div class="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+          <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" ></div>
+        </div>
+      </div>
+
+
+
+    </div>
   )
 }
 

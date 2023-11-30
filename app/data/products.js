@@ -56,7 +56,7 @@ export const mockData = [
         stock: 7,
     },
     {
-        title: "Freya",
+        title: "asdadadada",
         desc: "Freya, una planta luminosa con un toque especial, ideal para crear un ambiente cálido y acogedor en tu hogar.",
         img: "8.jpg",
         price: "12.20",

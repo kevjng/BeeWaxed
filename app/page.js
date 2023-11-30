@@ -23,7 +23,7 @@ export const metadata = {
 export default function Home() {
   return (
      
-      <div className="text-center">
+    <div className="text-center container">
         <NavBar />
         <section
           id="Blog"

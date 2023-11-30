@@ -9,7 +9,7 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div> 
-      <nav className="w-full bg-black top-0 fixed top-0 left-0 right-0 z-50">
+      <nav className="w-full bg-black top-0 fixed left-0 right-0 z-50">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">

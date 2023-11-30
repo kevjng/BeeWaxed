@@ -29,7 +29,7 @@ const Tienda = ({ params }) => {
     return (
         <div className="container my-5" >
 
-            <div className="my-4">
+            <div className="my-8">
                 <h1>
                     Estas en la categoria: {categoria}
                 </h1>

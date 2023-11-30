@@ -21,9 +21,9 @@ const NotFound = () => {
       />
       <Button
         onClick={() => router.back()}
-        className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-white"
+        className="mt-10 p-6 bg-yellow-500 hover:bg-yellow-600 text-white"
       >
-        Volver
+        ← Volver
       </Button>
     </div>
   );
