@@ -5,7 +5,7 @@ import Link from "next/link";
 const ProductCard = ({ item }) => {
 
     return (
-        <div className="bg-violet-950 rounded-xl overflow-hidden hover:scale-95 hover:col transition-transform transform hover:bg-violet-700">
+        <div className="bg-fuchsia-950 rounded-xl overflow-hidden hover:scale-95 hover:col transition-transform transform hover:bg-purple-800 mx-4 my-2">
 
 
             <div className="flex flex-col rounded p-2">

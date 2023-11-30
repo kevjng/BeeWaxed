@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from "react";
@@ -15,11 +14,11 @@ const Contacto = () => {
 
 
   return (
-    <div className="container max-w-7xl">
+    <div className="container">
 
 
 
-      <div className="container my-20 md:px-8 bg-slate-00 rounded-3xl">
+      <div className="container my-20 md:px-8 rounded-3xl">
         <div className="p-8 rounded-md justify-center text-center">
           <div class="mx-auto max-w-2xl text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl mt-20">Contactanos</h2>
@@ -68,7 +67,7 @@ const Contacto = () => {
             />
           </div>
           <div className="my-2 flex justify-end">
-            <Button size="lg" shadow color="danger" className="text-white mx-4">
+            <Button size="lg" shadow color="danger" className="text-white">
               Borrar
             </Button>
             <Button size="lg" shadow color="warning" className="text-white mx-4">

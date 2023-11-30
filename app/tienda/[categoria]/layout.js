@@ -17,7 +17,7 @@ const layoutTienda = ({ children }) => {
         
 
       </h2>
-      <nav className="flex gap-10">
+      <nav className="flex flex-wrap gap-10 mx-4">
         <Link href="/tienda/all" className="hover:text-yellow-300">Todos</Link>
         <Link href="/tienda/luminosa" className="hover:text-yellow-300">Luminosas</Link>
         <Link href="/tienda/galaxia" className="hover:text-yellow-300">Galaxia</Link>

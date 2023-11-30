@@ -24,7 +24,7 @@ export default function Home() {
   return (
      
     <div className="text-center container">
-        <NavBar />
+        
         <section
           id="Blog"
           className="text-white h-screen bg-black text-center flex"
