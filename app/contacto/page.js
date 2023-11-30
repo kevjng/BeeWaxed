@@ -15,7 +15,7 @@ const Contacto = () => {
 
 
   return (
-    <div className="container">
+    <div className="container max-w-7xl">
 
 
 
@@ -28,7 +28,7 @@ const Contacto = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-default-400 text-large">
-            Formulario de contacto
+            Datos de contacto:
           </h3>
           <form className="flex flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4 mx-4">
 
@@ -55,15 +55,23 @@ const Contacto = () => {
             />
 
           </form>
-          <div className="flex my-5 mx-4">
+
+          <h3 className="text-default-400 text-large">
+            Mensaje:
+          </h3>
+
+          <div className="flex my-2 mx-4">
             <Textarea
-              label="Mensaje"
-              placeholder="Dejanos tu mensaje"
+              label="Dejanos tu mensaje"
+              placeholder=""
               className="my-4"
             />
           </div>
-          <div className="my-5">
-            <Button size="lg" shadow color="warning" className="text-white">
+          <div className="my-2 flex justify-end">
+            <Button size="lg" shadow color="danger" className="text-white mx-4">
+              Borrar
+            </Button>
+            <Button size="lg" shadow color="warning" className="text-white mx-4">
               Enviar
             </Button>
 
