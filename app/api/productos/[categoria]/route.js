@@ -7,7 +7,7 @@ const sleep = (timer) => {
 
 export async function GET(request, { params }) {
     const { categoria } = params
-    const data = categoria === 'todos' ? mockData : mockData.filter(item => item.tipo === categoria)
+    const data = categoria === 'all' ? mockData : mockData.filter(item => item.tipo === categoria)
 
     await sleep(1000)
 
