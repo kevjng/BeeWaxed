@@ -1,3 +1,4 @@
+import ProductDetail from "../../../../components/products/ProductDetail"
 
 
 export async function generateMetadata({ params, searchParams }, parent) {
