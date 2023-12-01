@@ -1,10 +1,4 @@
 
-
-import Tienda from "./productos/[categoria]/page";
-import Contacto from "./contacto/page";
-
-
-
 export const metadata = {
   title: 'BeeWaxed - Página inicio',
   description: 'App de BeeWaxed 2023',
@@ -15,7 +9,6 @@ export const metadata = {
     type: 'article',
     authors: ['kvj'],
   }
-
 }
   
 
@@ -47,7 +40,7 @@ export default function Home() {
             Contacto{' '}
           </h1>
           </section>
-          <Contacto/>
+         
         </div>
         <section
           id="tienda"
@@ -55,7 +48,7 @@ export default function Home() {
         >
           <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
             Tienda
-            <Tienda/>
+            
           </h1>
         </section>
       </div>

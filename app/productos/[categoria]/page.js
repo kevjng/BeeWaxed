@@ -3,20 +3,33 @@ import { mockData } from "../../data/products" */
 
 import CategoriesMenu from "../../components/products/CategoriesMenu"
 import ProductsList from "../../components/products/ProductList"
+import { Suspense } from "react"
 
 /* export const metadata = {
     title: 'BeeWaxed - Tienda',
 
 } */
 
-export const generateMetadata = async ({ params, searchParams }, parent) => {
-
+export async function generateMetadata({ params, searchParams }, parent) {
     return {
         title: `BeeWaxed - ${params.categoria}`,
     }
 }
 
-const Tienda = ({ params }) => {
+export const revalidate = 3600
+
+export async function generateStaticParams() {
+    return [
+        { categoria: 'todos' },
+        { categoria: 'luminosas' },
+        { categoria: 'galaxia' },
+        { categoria: 'lisa' },
+        { categoria: 'vintqage' },
+        { categoria: 'clasic' },
+    ]
+}
+
+const Productos = ({ params }) => {
     /* console.log(params)
 
     const { categoria } = params
@@ -31,32 +44,25 @@ const Tienda = ({ params }) => {
 
     return (
 
-        <div className="container my-5" >
+        <main className="container my-5" >
 
-            {/* <div className="my-8">
-                <h1>
-                    Estas en la categoria: {categoria}
-                </h1>
-            </div> */}
-
-            {/* <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"> */}
-
-            {/*  {items.map(product => <ProductCard key={product.code} item={product} />)} */}
-            
             <div className="flex gap-10">
 
                 <CategoriesMenu />
-                <ProductsList categoria={categoria} />
+                
+                <Suspense fallback={<div>Cargando...</div>}>
+                    <ProductsList categoria={categoria} />
+                </Suspense>
 
             </div>
 
-            {/*  </section> */}
 
-        </div>
+
+        </main>
     )
 
 }
 
-export default Tienda
+export default Productos
 
 
