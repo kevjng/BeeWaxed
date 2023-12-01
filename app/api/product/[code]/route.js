@@ -1,4 +1,4 @@
-import { mockData } from "@/data/products"
+import { mockData } from "../../../data/products"
 import { NextResponse } from "next/server"
 
 const sleep = (timer) => {
@@ -7,7 +7,7 @@ const sleep = (timer) => {
 
 export async function GET(_, { params }) {
     const { slug } = params
-    const data = mockData.find(product => product.slug === slug)
+    const data = mockData.find(product => product.code === slug)
 
     await sleep(1000)
 

@@ -4,9 +4,11 @@ import { usePathname } from "next/navigation"
 
 const links = [
     { label: "Todos", href: "/productos/todos", },
-    { label: "TVs", href: "/productos/tvs", },
-    { label: "Aires", href: "/productos/aires", },
-    { label: "Hornos", href: "/productos/hornos", }
+    { label: "Luminosas", href: "/productos/luminosas", },
+    { label: "Galaxia", href: "/productos/galaxia", },
+    { label: "Lisa", href: "/productos/lisa", },
+    { label: "Vintage", href: "/productos/vintage", },
+    { label: "Clasic", href: "/productos/clasic", }
 ]
 
 const CategoriesMenu = () => {

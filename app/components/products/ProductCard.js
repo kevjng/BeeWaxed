@@ -1,5 +1,7 @@
-import { Image } from "@nextui-org/react";
+/* import { Image } from "@nextui-org/react"; */
+
 import Link from "next/link";
+import Image from "next/image"
 
 
 const ProductCard = ({ item }) => {
@@ -8,13 +10,22 @@ const ProductCard = ({ item }) => {
         <div className="bg-fuchsia-950 rounded-xl overflow-hidden hover:scale-95 hover:col transition-transform transform hover:bg-purple-800 mx-4 my-2">
 
 
-            <div className="flex flex-col rounded p-2">
-
-                <Link href={`/tienda/detail/${item.code}`}>
+            <div className="container flex flex-col rounded p-2 items-center">
+                
+                <Link href={`/tienda/detail/${item.code}`} className="flex flex-col">
                     <div className="hover:scale-110 transition-easy transform duration-400">
+    
+                       {/*  <Image
+                            alt={item.title}
+                            src={`/images/products/${item.img}`}
+                        /> */}
+
                         <Image
                             alt={item.title}
                             src={`/images/products/${item.img}`}
+                            width={288}
+                            height={288}
+                            style={{ objectFit: "contain", borderRadius:"10px" }}
                         />
 
                     </div>
