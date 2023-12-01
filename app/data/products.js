@@ -6,6 +6,7 @@ export const mockData = [
         price: "5.50",
         tipo: "luminosa",
         stock: 8,
+        code:1,
     },
     {
         title: "Asensia",
@@ -14,6 +15,7 @@ export const mockData = [
         price: "3.00",
         tipo: "galaxia",
         stock: 15,
+        code:2,
     },
     {
         title: "Seymour",
@@ -22,6 +24,7 @@ export const mockData = [
         price: "10.00",
         tipo: "lisa",
         stock: 5,
+        code:3,
     },
     {
         title: "Bonnie",
@@ -30,6 +33,7 @@ export const mockData = [
         price: "5.30",
         tipo: "vintage",
         stock: 10,
+        code:4,
     },
     {
         title: "Líria",
@@ -38,6 +42,7 @@ export const mockData = [
         price: "15.70",
         tipo: "clasic",
         stock: 20,
+        code:5,
     },
     {
         title: "O.J.",
@@ -46,6 +51,7 @@ export const mockData = [
         price: "8.00",
         tipo: "luminosa",
         stock: 12,
+        code:6,
     },
     {
         title: "Spooky",
@@ -54,13 +60,15 @@ export const mockData = [
         price: "7.50",
         tipo: "luminosa",
         stock: 7,
+        code:7,
     },
     {
-        title: "asdadadada",
+        title: "Freya",
         desc: "Freya, una planta luminosa con un toque especial, ideal para crear un ambiente cálido y acogedor en tu hogar.",
         img: "8.jpg",
         price: "12.20",
         tipo: "luminosa",
         stock: 18,
+        code:8,
     },
 ];

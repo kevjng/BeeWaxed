@@ -1,5 +1,5 @@
 
-import NavBar from "./components/ui/navbar/Navbar";
+import NavBar from "./components/ui/Navbar";
 import Tienda from "./tienda/[categoria]/page";
 import Contacto from "./contacto/page";
 

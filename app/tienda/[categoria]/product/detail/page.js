@@ -2,36 +2,34 @@
 
 export async function generateMetadata({ params, searchParams }, parent) {
 
-    return {
-        title: `BeeWaxed - ${params.categoria}`,
-    }
+  return {
+    title: `BeeWaxed - ${params.categoria}`,
+  }
 }
 
-const DetalleProducto = (params) => {
+const DetailPage = ({ params }) => {
 
-    console.log(params)
-
-    const { categoria, id } = params
+  const { code } = params
 
   return (
-      <div>
-          
-          DetalleProducto
-<hr/>
-          Ruta:
-          
+    <div className="container m-auto mt-10">
 
-          
+      DetalleProducto
+      <hr />
+
+      <ProductDetail code={code}/>
 
 
-      </div>
+
+
+    </div>
   )
 }
 
-export default DetalleProducto
+export default DetailPage
 
 
-    {/* < div class="container my-24 mx-auto md:px-6" >
+{/* < div class="container my-24 mx-auto md:px-6" >
   < !--Section: Design Block-- >
   <section class="mb-32">
     <!-- Jumbotron -->

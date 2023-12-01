@@ -10,7 +10,7 @@ const ProductCard = ({ item }) => {
 
             <div className="flex flex-col rounded p-2">
 
-                <Link href={`/tienda/detail/${item.title}`}>
+                <Link href={`/tienda/detail/${item.code}`}>
                     <div className="hover:scale-110 transition-easy transform duration-400">
                         <Image
                             alt={item.title}
