@@ -1,6 +1,6 @@
 
-import NavBar from "./components/ui/Navbar";
-import Tienda from "./tienda/[categoria]/page";
+
+import Tienda from "./productos/[categoria]/page";
 import Contacto from "./contacto/page";
 
 
