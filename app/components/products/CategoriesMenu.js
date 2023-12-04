@@ -15,12 +15,16 @@ const CategoriesMenu = () => {
     const pathname = usePathname()
 
     return (
-        <aside className="flex flex-col gap-4">
+        <aside className="flex flex-col gap-4 mx-6">
             {links.map(link => (
                 <Link
                     key={link.label}
                     href={link.href}
-                    className={`${pathname === link.href ? "font-semibold text-yellow-300" : ''} py-2`}
+                    className={`${pathname === link.href
+                        
+                        ? "font-semibold text-yellow-300"
+                        : ''} py-2`
+                    }
                 >
                     {link.label}
                 </Link>

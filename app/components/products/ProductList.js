@@ -7,11 +7,11 @@ const ProductsList = async ({ categoria }) => {
     }).then(r => r.json())
 
     return (
-        <section className="container m-auto flex justify-center items-center gap-12 flex-wrap">
+        <div className="grid gap-2 ">
             {
                 items.map(item => <ProductCard key={item.slug} item={item} />)
             }
-        </section>
+        </div>
     )
 }
 

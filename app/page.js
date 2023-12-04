@@ -19,11 +19,11 @@ export default function Home() {
     <div className="text-center container">
         
         <section
-          id="Blog"
+          id="Inicio"
           className="text-white h-screen bg-black text-center flex"
         >
           <h1 className="m-auto font-waterfall text-7xl text-yellow-600 font-bold  ">
-            Blog
+            Inicio
           </h1>
         </section>
         <section id="nosotros" className=" text-white h-screen bg-yellow-900 flex">
@@ -42,15 +42,18 @@ export default function Home() {
           </section>
          
         </div>
+        <div>
         <section
-          id="tienda"
-          className="text-white bg-yellow-400 flex"
+          id="contacto"
+          className="text-white h-screen bg-green-950 text-center flex"
         >
           <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
             Tienda
-            
           </h1>
-        </section>
+          </section>
+         
+        </div>
+       
       </div>
      
       

@@ -5,6 +5,13 @@ import CategoriesMenu from "../../components/products/CategoriesMenu"
 import ProductsList from "../../components/products/ProductList"
 import { Suspense } from "react"
 
+import 'ldrs/ring'
+import 'ldrs/hourglass'
+import 'ldrs/bouncyArc'
+
+
+
+
 /* export const metadata = {
     title: 'BeeWaxed - Tienda',
 
@@ -34,7 +41,7 @@ const Productos = ({ params }) => {
 
     const { categoria } = params
 
-    const items = categoria === 'all'
+    const items = categoria === 'todos'
         ? mockData
         : mockData.filter(product => product.tipo === categoria)
  */
@@ -49,9 +56,22 @@ const Productos = ({ params }) => {
             <div className="flex gap-10">
 
                 <CategoriesMenu />
-                
-                <Suspense fallback={<div>Cargando...</div>}>
+
+                <Suspense fallback={
+                    <div className="text-yellow-400">
+
+                        Cargando Productos..
+
+                        {<l-bouncy-arc
+                            size="70"
+                            speed="1.65"
+                            color="white"
+                        ></l-bouncy-arc>}
+
+                    </div>}>
+                    
                     <ProductsList categoria={categoria} />
+
                 </Suspense>
 
             </div>

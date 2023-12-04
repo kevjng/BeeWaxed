@@ -35,7 +35,7 @@ const ProductCard = ({ item }) => {
 
                 <div className="flex flex-col justify-between rounded m-2">
 
-                    <h2 className="text-xl sm:text-2xl font-bold my-6">{item.title}</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold my-6 m-auto">{item.title}</h2>
                     <p className="text-gray-400 mb-4">{item.desc}</p>
 
                     <div className="flex flex-row justify-between items-center">

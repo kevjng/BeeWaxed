@@ -10,7 +10,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 const DetailPage = ({ params }) => {
 
-  const { code } = params
+  const { slug } = params
 
   return (
     <div className="container m-auto mt-10">
@@ -18,7 +18,7 @@ const DetailPage = ({ params }) => {
       DetalleProducto
       <hr />
 
-      <ProductDetail code={code}/>
+      <ProductDetail slug={slug}/>
 
 
 
