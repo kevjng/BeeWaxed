@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Boton from "../ui/Boton"
+import Boton from "../components/ui/Boton"
 
 
 const ContactForm = () => {
@@ -11,7 +11,7 @@ const ContactForm = () => {
 
     const handleChange = (e) => {
         setValues({
-            ...values,
+            ...values,  
             [e.target.name]: e.target.value
         })
     }

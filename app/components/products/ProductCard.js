@@ -43,11 +43,11 @@ const ProductCard = ({ item }) => {
                             <p className="font-semibold text-gray-200 text-lg sm:text-xl my-2">${item.price}</p>
                         </div>
                         <div className="flex flex-row items-center space-x-2">
-                            <button className="text-gray-400 py-2 px-3 rounded-full focus:outline-none focus:ring ">
+                            <button className="text-gray-400 py-2 px-3 rounded-full focus:outline-none ">
                                 ◀
                             </button>
                             <p className="text-gray-300 font-semibold">{item.stock}</p>
-                            <button className="text-gray-400 py-2 px-3 rounded-full focus:outline-none focus:ring ">
+                            <button className="text-gray-400 py-2 px-3 rounded-full focus:outline-none ">
                                 ▶
                             </button>
                         </div>

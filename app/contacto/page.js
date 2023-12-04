@@ -4,6 +4,11 @@ import React from "react";
 import { Button, Input } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
 
+import { useState } from "react"
+import Boton from "../components/ui/Boton"
+import ContactForm from "../contacto/ContactForm"
+
+
 
 const Contacto = () => {
   const placements = [
@@ -17,7 +22,6 @@ const Contacto = () => {
     <div className="container">
 
 
-
       <div className="container my-20 md:px-8 rounded-3xl">
         <div className="p-8 rounded-md justify-center text-center">
           <div class="mx-auto max-w-2xl text-center">
@@ -25,6 +29,7 @@ const Contacto = () => {
             <p class="mt-2 text-lg leading-8 text-gray-400">Nos pondremos en contacto a la velocidad de la luz.</p>
           </div>
         </div>
+    <ContactForm></ContactForm>
         <div className="flex flex-col gap-2">
           <h3 className="text-default-400 text-large">
             Datos de contacto:
@@ -70,7 +75,7 @@ const Contacto = () => {
             <Button size="lg" shadow color="danger" className="text-white">
               Borrar
             </Button>
-            <Button size="lg" shadow color="warning" className="text-white mx-4">
+            <Button type="submit" size="lg" shadow color="warning" className="text-white mx-4">
               Enviar
             </Button>
 
