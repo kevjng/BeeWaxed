@@ -77,6 +77,7 @@ const ContactForm = () => {
                         label="Numero"
                         labelPlacement="inside"
                         description="Ingresa tu Numero"
+                        className="my-2"
                         name="numero"
                         onChange={handleChange}
                         value={values.numero}
