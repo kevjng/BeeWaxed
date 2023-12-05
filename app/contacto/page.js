@@ -11,13 +11,7 @@ import ContactForm from "../contacto/ContactForm"
 
 
 const Contacto = () => {
-  const placements = [
-    "inside",
-    "outside",
-    "outside-left",
-  ];
-
-
+  
   return (
     <div className="container">
 
@@ -29,59 +23,12 @@ const Contacto = () => {
             <p class="mt-2 text-lg leading-8 text-gray-400">Nos pondremos en contacto a la velocidad de la luz.</p>
           </div>
         </div>
-    <ContactForm></ContactForm>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-default-400 text-large">
-            Datos de contacto:
-          </h3>
-          <form className="flex flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4 mx-4">
 
-            <Input
-              type="text"
-              label="Nombre"
-              labelPlacement={"inside"}
-              description={"Ingresa tu Nombre"}
-              className="my-4"
-            />
-            <Input
-              type="email"
-              label="Email"
-              labelPlacement={"inside"}
-              description={"Ingresa tu email"}
-              className="my-4"
-            />
-            <Input
-              type="text"
-              label="Numero"
-              labelPlacement={"inside"}
-              className="my-4"
-              description={"Ingresa tu Numero"}
-            />
-
-          </form>
-
-          <h3 className="text-default-400 text-large">
-            Mensaje:
-          </h3>
-
-          <div className="flex my-2 mx-4">
-            <Textarea
-              label="Dejanos tu mensaje"
-              placeholder=""
-              className="my-4"
-            />
-          </div>
-          <div className="my-2 flex justify-end">
-            <Button size="lg" shadow color="danger" className="text-white">
-              Borrar
-            </Button>
-            <Button type="submit" size="lg" shadow color="warning" className="text-white mx-4">
-              Enviar
-            </Button>
-
-          </div>
-        </div>
       </div>
+        <div className="mx-4">
+          <ContactForm></ContactForm>
+        </div>
+        
 
       <div class="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
         <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
