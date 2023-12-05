@@ -6,7 +6,7 @@ const GoBack = ({ ...args }) => {
     const router = useRouter()
 
     return (
-        <button onClick={() => router.back()} {...args}>
+        <button onClick={() => router.back()} {...args} className="rounded-lg py-2 px-4 bg-yellow-400 text-white text-center m-4">
             Volver
         </button>
     )

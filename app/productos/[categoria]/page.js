@@ -43,8 +43,7 @@ const Productos = ({ params }) => {
 
     const items = categoria === 'todos'
         ? mockData
-        : mockData.filter(product => product.tipo === categoria)
- */
+        : mockData.filter(product => product.tipo === categoria)*/
 
     const { categoria } = params
 
@@ -62,11 +61,11 @@ const Productos = ({ params }) => {
 
                         Cargando Productos..
 
-                        {<l-bouncy-arc
+                        <l-bouncy-arc
                             size="70"
                             speed="1.65"
                             color="white"
-                        ></l-bouncy-arc>}
+                        ></l-bouncy-arc>
 
                     </div>}>
                     
