@@ -37,9 +37,10 @@ const ProductCard = ({ item }) => {
                     <p className="text-gray-100 mb-4 sm:text-sm md:text-md lg:text-md mx-2 text-center">{item.desc}</p>
 
                     <div className="flex flex-wrap justify-between items-center">
-                        <div className="flex-wrap items-center justify-between">
+
+                        {/* <div className="flex-wrap items-center justify-between">
                             <p className="font-semibold text-gray-200 text-lg sm:text-xl my-2 mx-auto">${item.price}</p>
-                        </div>
+                        </div> */}
                        
                        {/*  <div className="flex flex-row items-center space-x-2 mx-2">
                             <button className="text-gray-400 py-2 px-3 rounded-full focus:outline-none ">

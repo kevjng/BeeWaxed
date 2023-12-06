@@ -8,6 +8,13 @@ const getProduct = async (id) => {
     return docSnapshot.data()
 }
 
+export async function generateMetadata({ params, searchParams }, parent) {
+
+    return {
+        title: `BeeWaxed - ${params.title}`,
+    }
+}
+
 
 const Detail = async ({ params }) => {
     const { id } = params
@@ -17,9 +24,21 @@ const Detail = async ({ params }) => {
 
     return (
         <div className="container m-auto mt-24">
-            <h2 className="text-4x1 text-bold text-red-700">Detalle de Producto</h2>
-            <hr/>
-            <div> </div>
+
+            <h2 className="text-4x1 text-bold text-yellow-300 my-4">Detalle de Producto</h2>
+            <hr />
+            
+            <div>{item.img}</div>
+            <div>{item.title}</div>
+            <div>{item.desc}</div>
+            <div>$ {item.price}</div>
+            <div>Stock {item.stock}</div>
+            <div>Tipo {item.tipo}</div>
+             
+            <div>
+
+
+            </div>
         </div>
     )
 }
