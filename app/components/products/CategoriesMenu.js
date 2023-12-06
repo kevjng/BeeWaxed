@@ -22,8 +22,8 @@ const CategoriesMenu = () => {
                     href={link.href}
                     className={`${pathname === link.href
                         
-                        ? "font-semibold text-yellow-300"
-                        : ''} py-2`
+                        ? "font-semibold text-yellow-300 translate-x-2"
+                        : ''} py-2 hover:translate-x-2 transition-all`
                     }
                 >
                     {link.label}

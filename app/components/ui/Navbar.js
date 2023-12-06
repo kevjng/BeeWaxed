@@ -9,7 +9,7 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div> 
-      <nav className="w-full bg-black top-0 fixed left-0 right-0 z-50 opacity-80">
+      <nav className="w-full bg-black top-0 fixed left-0 right-0 z-50 opacity-90">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-4 md:block">
@@ -18,10 +18,11 @@ function NavBar() {
                 <Image
                   shadow="sm"
                   radius="lg"
-                  width="100"
-                  height="100"
+                  width="110"
+                  height="110"
                   alt={"logo"}
                   src={"/images/logo.png"}
+                  className={"hover:translate-x-1 hover:translate-y-1 hover:rotate-2 hover:scale-110 transition-all"}
                 />
               </Link>
               {/* MENU HAMBURGUESA PARA MOVIL */}
@@ -31,14 +32,19 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/images/close.svg" width={30} height={30} alt="close" className="focus:border-none active:border-none translate:-1"/>
+                    <Image
+                      src="/images/close.svg"
+                      width={30}
+                      height={30}
+                      alt="close"
+                      className="focus:border-none active:border-none translate:-1" />
                   ) : (
                     <Image
                       src="/images/hamburger-menu.svg"
                       width={30}
                       height={30}
                       alt="menu"
-                      className="focus:border-none active:border-none"
+                      className="focus:border-none active:border-none "
                     />
                   )}
                 </button>
