@@ -1,6 +1,8 @@
 import { db } from "../../../../firebase/config"
 import { doc, getDoc } from "firebase/firestore"
 
+import GoBack from "../../../components/ui/GoBack"
+
 const getProduct = async (id) => {
     const docRef = doc(db, 'productos', id)
     const docSnapshot = await getDoc(docRef)
@@ -33,7 +35,8 @@ const Detail = async ({ params }) => {
                         
                         <div class="container mx-auto text-center lg:text-left xl:px-32">
                             <div class="grid items-center lg:grid-cols-2">
-                                <div class="mb-12 lg:mb-0">
+                            <div class="mb-12 lg:mb-0">
+                                <GoBack> Volver </GoBack>
                                     <div
                                         class="relative z-[1] block rounded-lg bg-[#333333] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14">
                                         <h2 class="mb-8 text-3xl font-bold">{item.title}</h2>
