@@ -3,12 +3,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from "next/navigation"
+
+const links = [
+  { label: "Inicio", href: "/", },
+  { label: "Nosotros", href: "/nosotros", },
+  { label: "Contacto", href: "/contacto", },
+  { label: "Tienda", href: "/productos/todos", },
+]
 
 
 function NavBar() {
+
+  const pathname = usePathname()
+
   const [navbar, setNavbar] = useState(false);
   return (
-    <div> 
+    <div>
       <nav className="w-full bg-black top-0 fixed left-0 right-0 z-50 opacity-90">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
@@ -58,33 +69,39 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 border-yellow-300  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  
+
                 </li>
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-300  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  <Link href="/" onClick={() => setNavbar(!navbar)}>
-                    Inicio
-                  </Link>
+                        
+                 
+                    {links.map(link => (
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-600  md:hover:text-yellow-400 md:hover:bg-transparent hover:translate-y-1 transition-all">
+                      
+                      <Link onClick={() => setNavbar(!navbar)}
+                        key={link.label}
+                        href={link.href}
+                        className={`${pathname === link.href
+
+                          ? "font-semibold text-yellow-300 translate-x-2"
+                          : ''} py-2 hover:translate-y-2 transition-all`
+                        }
+                      >
+                        {link.label}
+                      </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-400  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  <Link href="/nosotros" onClick={() => setNavbar(!navbar)}>
-                    Nosotros
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-500  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  <Link href="/contacto" onClick={() => setNavbar(!navbar)}>
-                    Contacto
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-600  md:hover:text-yellow-400 md:hover:bg-transparent">
-                  <Link href="/productos/todos" onClick={() => setNavbar(!navbar)}>
-                    Tienda
-                  </Link>
-                </li>
+                    ))}
               </ul>
+                 
+                  
+
+              
+
             </div>
           </div>
         </div>
       </nav>
+
+      
+
     </div>
   );
 }
