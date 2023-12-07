@@ -14,7 +14,7 @@ const getProduct = async (id) => {
 export async function generateMetadata({ params, searchParams }, parent) {
 
     return {
-        title: `BeeWaxed - ${params.title}`,
+        title: `BeeWaxed - ${params}`,
     }
 }
 
