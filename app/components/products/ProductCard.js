@@ -19,14 +19,14 @@ const ProductCard = ({ item }) => {
                             src={`/images/products/${item.img}`}
                             width={400}
                             height={400}
-                            className="rounded-3xl" />
+                            className="rounded-3xl border-x-small" />
                     </div>
 
                 </Link>
                 <div class="p-5">
-                    <a href="#">
+                    
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">{item.title}</h5>
-                    </a>
+                    
                     <p class="mb-3 font-normal text-gray-100 dark:text-gray-200">{item.desc}</p>
                     
                 </div>
