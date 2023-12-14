@@ -7,12 +7,15 @@ import Boton from "../ui/Boton"
 
 
 const ProductDetail = ({ item }) => {
-    console.log(item)
-    const { addToCart } = useCartContext()
 
+    console.log(item)
+
+    const { addToCart } = useCartContext()
+    
+  
     return (
-        <div className="my-24">
-            <Boton onClick={() => addToCart(item)}>Agregar</Boton>
+        <div className="">
+            <Boton onClick={() => addToCart(item)}>Agregar al carrito</Boton>
         </div>
     )
 }

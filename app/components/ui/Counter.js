@@ -27,8 +27,7 @@ const Counter = ({ counter, setCounter, max }) => {
                             </svg>
                         </button>
                 </div>
-
-                <Boton className="my-4 mx-4">Agregar al Carrito</Boton>
+          
                 
             </form>
             

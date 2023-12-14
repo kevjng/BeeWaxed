@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaPlus, FaEdit, FaTrashAlt } from 'react-icons/fa';
+/* import { FaPlus, FaEdit, FaTrashAlt } from 'react-icons/fa'; */
 
 
 const Admin = () => {
-  const productList = [
+/*   const productList = [
     {
       title: "Yummy",
       desc: "Una planta de aspecto exquisito, fácil de cuidar y perfecta para iluminar cualquier rincón de tu hogar.",
@@ -68,12 +68,12 @@ const Admin = () => {
       tipo: "luminosa",
       stock: 18,
     },
-  ];
+  ]; */
 
   return (
     <div className="container mx-auto my-28">
       <h1 className="text-4xl font-bold mb-8 text-center ">Panel de Administración</h1>
-      <div className="bg-gray-100 p-8 rounded-md shadow-lg">
+      {/* <div className="bg-gray-100 p-8 rounded-md shadow-lg">
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
             <tr className="bg-gray-200">
@@ -114,7 +114,15 @@ const Admin = () => {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> */}
+
+      <LogoutButton />
+      <ProductsTable />
+
+
+
+
+
     </div>
   );
 };

@@ -3,6 +3,8 @@ import { doc, getDoc } from "firebase/firestore"
 
 import GoBack from "../../../components/ui/GoBack"
 import Counter from "../../../components/ui/Counter"
+import ProductDetail from "../../../components/products/ProductDetail"
+
 import Image from "next/image"
 
 const getProduct = async (id) => {
@@ -124,7 +126,8 @@ const Detail = async ({ params }) => {
                                     height={500}
                                     className="w-full rounded-3xl shadow-[0_10px_20px_rgba(255,_255,_255,_0.3)]" />
                             </div>
-                                    <Counter/>
+                            <Counter />
+                            <ProductDetail item= { item } />
 
                         </div>
                     </div>

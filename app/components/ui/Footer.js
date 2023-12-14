@@ -107,12 +107,20 @@ const Footer = () => {
             </div>
 
             
+
+            
             <div
                 className="w-full p-4 text-center"
                 >
-                © 2023 Copyright:
-                <a className="hover:text-white" href="#"
-                >BeeWaxed</a>
+                Copyright 
+                <a className="hover:text-white" href=""
+                > BeeWaxed © 2023</a>
+            </div>
+            <div
+                className="w-full p-4 text-center"
+                >
+               <a className="text-white hover:text-black" href=""
+                >by kvj</a>
             </div>
         </footer>
   )
