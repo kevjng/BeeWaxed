@@ -121,10 +121,10 @@ const Detail = async ({ params }) => {
                             <div>
                                 <Image
                                     alt={item.title}
-                                    src={`/images/products/${item.slug}.jpg`}
+                                    src={`${item.img}`}
                                     width={500}
                                     height={500}
-                                    className="w-full rounded-3xl shadow-[0_10px_20px_rgba(255,_255,_255,_0.3)]" />
+                                    className="w-full rounded-3xl" />
                             </div>
                             <Counter />
                             <ProductDetail item= { item } />

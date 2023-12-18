@@ -16,7 +16,7 @@ const ProductCard = ({ item }) => {
 
                         <Image
                             alt={item.title}
-                            src={`/images/products/${item.img}`}
+                            src={`${item.img}`}
                             width={400}
                             height={400}
                             className="rounded-3xl border-x-small" />
