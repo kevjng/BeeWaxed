@@ -33,6 +33,7 @@ function NavBar() {
                   src={"/images/logo.png"}
                   className={"hover:translate-x-1 hover:translate-y-1 hover:rotate-2 hover:scale-110 transition-all"}
                   style={{ objectFit: "contain", width: "100%", height: "100%" }}
+                  priority={"100"}
                 />
               </Link>
               {/* MENU HAMBURGUESA PARA MOVIL */}

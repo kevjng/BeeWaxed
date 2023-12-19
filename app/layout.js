@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
 
-       {/*  <AuthProvider> */}
+        <AuthProvider>
           <CartProvider>
 
             <div className="flex items-start justify-center">
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <Footer className="mt-20"></Footer>
 
           </CartProvider>
-        {/* </AuthProvider> */}
+        </AuthProvider>
       </body>
     </html>
   )

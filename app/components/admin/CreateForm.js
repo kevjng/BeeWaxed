@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import Boton from "../ui/Boton"
+import GoBack from "../ui/GoBack"
+
 import { doc, setDoc } from "firebase/firestore"
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import { db, storage } from "../../../firebase/config"
@@ -44,6 +46,7 @@ const CreateForm = () => {
 
     return (
         <div className="container m-auto mt-36 max-w-lg">
+            <GoBack/>
             <form onSubmit={handleSubmit} className="my-12">
                 <label>Slug: </label>
                 <input

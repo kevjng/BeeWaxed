@@ -22,9 +22,9 @@ export const AuthProvider = ({ children }) => {
         await signInWithEmailAndPassword(auth, values.email, values.password)
     }
 
-    const logout = () => {
-        signOut(auth)
-    }
+     const logout = () => {
+         signOut(auth)
+     }
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {

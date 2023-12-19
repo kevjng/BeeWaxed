@@ -22,15 +22,15 @@ const LoginForm = () => {
     }
 
     return (
-        <div className="fixed w-screen h-screen inset-0 z-10 flex justify-center items-center bg-blue-400 bg-opacity-25">
-            <form onSubmit={handleSubmit} className="bg-white py-4 px-6 rounded-xl max-w-md w-full">
+        <div className="inset-0 z-10 flex justify-center items-center h-screen">
+            <form onSubmit={handleSubmit} className="bg-gray-800 py-4 px-6 rounded-xl max-w-md w-full">
                 <h2>Login</h2>
                 <input
                     type="email"
                     value={values.email}
                     required
-                    placeholder="Tu email"
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    placeholder="Email"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
                     name="email"
                     onChange={handleChange}
                 />
@@ -38,14 +38,14 @@ const LoginForm = () => {
                     type="password"
                     value={values.password}
                     required
-                    placeholder="Tu password"
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    placeholder="Password"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
                     name="password"
                     onChange={handleChange}
                 />
                 <Boton onClick={() => loginUser(values)} className="mr-4">Ingresar</Boton>
                 <Boton onClick={() => createUser(values)}>Registrarme</Boton>
-                <Boton onClick={null} className="mt-2 block">Ingresar con Google</Boton>
+                {/* <Boton onClick={null} className="mt-2 block">Ingresar con Google</Boton> */}
             </form>
         </div>
     )

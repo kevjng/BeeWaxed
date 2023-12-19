@@ -76,6 +76,7 @@ const Admin = () => {
   return (
     <div className="container mx-auto my-28">
       <h1 className="text-4xl font-bold mb-8 text-center ">Panel de Administración</h1>
+      <hr className='my-10'/>
       {/* <div className="bg-gray-100 p-8 rounded-md shadow-lg">
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
@@ -119,7 +120,7 @@ const Admin = () => {
         </table>
       </div> */}
 
-      {/* <LogoutButton /> */}
+      <LogoutButton />
       <ProductsTable />
 
 
