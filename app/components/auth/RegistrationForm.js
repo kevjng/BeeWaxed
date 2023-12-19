@@ -1,12 +1,13 @@
 "use client"
+
 import React, { useState } from "react";
 import Boton from "../ui/Boton";
 import { useAuthContext } from "../../../contexts/AuthContext";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const LoginForm = () => {
-    const { loginUser } = useAuthContext();
+const RegistrationForm = () => {
+    const { createUser } = useAuthContext();
     const [values, setValues] = useState({
         email: "",
         password: "",
@@ -25,8 +26,8 @@ const LoginForm = () => {
         setIsLoading(true);
 
         try {
-            await loginUser(values);
-            /* toast.success("Inicio de sesión exitoso"); */
+            await createUser(values);
+            toast.success("Usuario creado correctamente");
         } catch (error) {
             toast.error(`Error: ${error.message}`);
         } finally {
@@ -37,7 +38,7 @@ const LoginForm = () => {
     return (
         <div className="inset-0 z-10 flex justify-center items-center h-screen">
             <form onSubmit={handleSubmit} className="bg-gray-800 py-4 px-6 rounded-xl max-w-md w-full">
-                <h2>Login</h2>
+                <h2>Registro</h2>
                 <input
                     type="email"
                     value={values.email}
@@ -57,11 +58,11 @@ const LoginForm = () => {
                     onChange={handleChange}
                 />
                 <Boton type="submit" className="mr-4 bg-green-400" disabled={isLoading}>
-                    {isLoading ? "Cargando..." : "Ingresar"}
+                    {isLoading ? "Cargando..." : "Registrarme"}
                 </Boton>
             </form>
         </div>
     );
 };
 
-export default LoginForm;
+export default RegistrationForm;
