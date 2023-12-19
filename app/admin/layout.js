@@ -2,11 +2,11 @@
 import { useAuthContext } from "../../contexts/AuthContext"
 
 const AdminLayout = ({ children, login }) => {
-    const { user } = useAuthContext()
+    const isLoggedIn = true
 
     return (
         <div>
-            {user.logged ? children : login}
+            { isLoggedIn ? children : login}
         </div>
     )
 }

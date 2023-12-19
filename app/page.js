@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div>
         <section
-          id="contacto"
+          id="tienda"
           className="text-white h-screen bg-green-950 text-center flex"
         >
           <h1 className="m-auto font-waterfall text-7xl text-white font-bold">

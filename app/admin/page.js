@@ -1,6 +1,9 @@
 import React from 'react';
 /* import { FaPlus, FaEdit, FaTrashAlt } from 'react-icons/fa'; */
 
+import LogoutButton from "../components/admin/LogoutButton"
+import ProductsTable from "../components/admin/ProductsTable"
+
 
 const Admin = () => {
 /*   const productList = [
@@ -116,7 +119,7 @@ const Admin = () => {
         </table>
       </div> */}
 
-      <LogoutButton />
+      {/* <LogoutButton /> */}
       <ProductsTable />
 
 

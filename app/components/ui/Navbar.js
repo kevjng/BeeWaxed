@@ -1,23 +1,21 @@
-"use client"
+"use client";
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { usePathname } from "next/navigation"
+import { usePathname } from "next/navigation";
 
 const links = [
   { label: "Inicio", href: "/", },
   { label: "Nosotros", href: "/nosotros", },
   { label: "Contacto", href: "/contacto", },
   { label: "Tienda", href: "/productos/todos", },
-]
-
+];
 
 function NavBar() {
-
-  const pathname = usePathname()
-
+  const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
+
   return (
     <div>
       <nav className="w-full bg-black top-0 fixed left-0 right-0 z-50 opacity-90">
@@ -29,11 +27,12 @@ function NavBar() {
                 <Image
                   shadow="sm"
                   radius="lg"
-                  width="110"
-                  height="110"
+                  width={110}
+                  height={110}
                   alt={"logo"}
                   src={"/images/logo.png"}
                   className={"hover:translate-x-1 hover:translate-y-1 hover:rotate-2 hover:scale-110 transition-all"}
+                  style={{ objectFit: "contain", width: "100%", height: "100%" }}
                 />
               </Link>
               {/* MENU HAMBURGUESA PARA MOVIL */}
@@ -48,7 +47,8 @@ function NavBar() {
                       width={30}
                       height={30}
                       alt="close"
-                      className="focus:border-none active:border-none translate:-1" />
+                      className="focus:border-none active:border-none translate:-1"
+                    />
                   ) : (
                     <Image
                       src="/images/hamburger-menu.svg"
@@ -68,40 +68,27 @@ function NavBar() {
                 }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 border-yellow-300  md:hover:text-yellow-400 md:hover:bg-transparent">
-
-                </li>
-                        
-                 
-                    {links.map(link => (
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-600  md:hover:text-yellow-400 md:hover:bg-transparent hover:translate-y-1 transition-all">
-                      
-                      <Link onClick={() => setNavbar(!navbar)}
-                        key={link.label}
-                        href={link.href}
-                        className={`${pathname === link.href
-
-                          ? "font-semibold text-yellow-300 translate-x-2"
-                          : ''} py-2 hover:translate-y-2 transition-all`
-                        }
-                      >
-                        {link.label}
-                      </Link>
-                </li>
-                    ))}
+                {links.map((link) => (
+                  <li
+                    key={link.label}
+                    className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-yellow-500  border-yellow-600  md:hover:text-yellow-400 md:hover:bg-transparent hover:translate-y-1 transition-all"
+                  >
+                    <Link
+                      onClick={() => setNavbar(!navbar)}
+                      href={link.href}
+                      className={`${pathname === link.href
+                        ? "font-semibold text-yellow-300 translate-x-2"
+                        : ""} py-2 hover:translate-y-2 transition-all`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
-                 
-                  
-
-              
-
             </div>
           </div>
         </div>
       </nav>
-
-      
-
     </div>
   );
 }

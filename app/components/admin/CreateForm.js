@@ -15,17 +15,17 @@ const createProduct = async (values, file) => {
     const docRef = doc(db, "productos", values.slug)
     return setDoc(docRef, {
         ...values,
-        image: fileURL
-    }).then(() => console.log("Producto creado exitosamente"))
+        img: fileURL
+    }).then(() => console.log("Producto subido!"))
 }
 
 const CreateForm = () => {
     const [values, setValues] = useState({
         title: '',
-        description: '',
-        inStock: 0,
+        desc: '',
+        stock: 0,
         price: 0,
-        type: '',
+        tipo: '',
         slug: ''
     })
     const [file, setFile] = useState(null)
@@ -43,14 +43,14 @@ const CreateForm = () => {
     }
 
     return (
-        <div className="container m-auto mt-6 max-w-lg">
+        <div className="container m-auto mt-36 max-w-lg">
             <form onSubmit={handleSubmit} className="my-12">
                 <label>Slug: </label>
                 <input
                     type="text"
                     value={values.slug}
                     required
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
                     name="slug"
                     onChange={handleChange}
                 />
@@ -60,7 +60,7 @@ const CreateForm = () => {
                     type="file"
                     allowMultiple={false}
                     onChange={(e) => setFile(e.target.files[0])}
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-white"
                 />
 
                 <label>Nombre: </label>
@@ -68,7 +68,7 @@ const CreateForm = () => {
                     type="text"
                     value={values.title}
                     required
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
                     name="title"
                     onChange={handleChange}
                 />
@@ -78,7 +78,7 @@ const CreateForm = () => {
                     type="number"
                     value={values.price}
                     required
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
                     name="price"
                     onChange={handleChange}
                 />
@@ -86,28 +86,28 @@ const CreateForm = () => {
                 <label>Stock: </label>
                 <input
                     type="number"
-                    value={values.inStock}
+                    value={values.stock}
                     required
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
-                    name="inStock"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
+                    name="stock"
                     onChange={handleChange}
                 />
 
                 <label>Categoria: </label>
                 <input
                     type="text"
-                    value={values.type}
+                    value={values.tipo}
                     required
-                    className="p-2 rounded w-full border border-blue-100 block my-4"
-                    name="type"
+                    className="p-2 rounded w-full border border-blue-100 block my-4 text-black"
+                    name="tipo"
                     onChange={handleChange}
                 />
 
                 <label>Descripción: </label>
                 <textarea
-                    value={values.description}
-                    className="resize-none w-full h-24 p-2 rounded border block border-blue-100 my-4"
-                    name="description"
+                    value={values.desc}
+                    className="resize-none w-full h-24 p-2 rounded border block border-blue-100 my-4 text-black"
+                    name="desc "
                     onChange={handleChange}
                 />
 

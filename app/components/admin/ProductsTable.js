@@ -18,20 +18,20 @@ const ProductsTable = async () => {
                 href={"/admin/create"}
                 className="rounded bg-blue-600 p-2 text-white"
             >
-                Crear nuevo
+                Nuevo Producto
             </Link>
-            <div className="overflow-x-auto">
 
-                <table className="w-full text-xs text-left text-gray-600">
-                    <thead className="text-xs text-gray-700 uppercase">
+            <div className="overflow-x-auto my-10">
+                <table className="w-full text-xs text-left text-gray-300">
+                    <thead className="text-xs text-gray-500 uppercase">
                         <tr>
                             <th scope="col" className="px-3 py-2">Nombre</th>
                             <th scope="col" className="px-3 py-2">Precio</th>
-                            <th scope="col" className="px-3 py-2">En stock</th>
+                            <th scope="col" className="px-3 py-2">Stock</th>
                             <th scope="col" className="px-3 py-2">Tipo</th>
-                            <th scope="col" className="px-3 py-2">Imagen</th>
+                            <th scope="col" className="px-3 py-2">Img</th>
                             <th scope="col" className="px-3 py-2">Slug</th>
-                            <th scope="col" className="px-3 py-2">Descripción</th>
+                            <th scope="col" className="px-3 py-2">Desc</th>
                             <th scope="col" className="px-3 py-2">Acciones</th>
                         </tr>
                     </thead>
@@ -42,13 +42,14 @@ const ProductsTable = async () => {
                                     <td className="p-2">{item.title}</td>
                                     <td className="p-2">{item.price}</td>
                                     <td className="p-2">{item.stock}</td>
-                                    <td className="p-2">{item.tipó}</td>
+                                    <td className="p-2">{item.tipo}</td>
                                     <td className="p-2">
                                         <Image
                                             src={item.img}
                                             alt={item.title}
                                             width={80}
                                             height={80}
+                                            className={"rounded"}
                                         />
                                     </td>
                                     <td className="p-2">{item.slug}</td>
