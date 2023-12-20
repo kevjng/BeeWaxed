@@ -14,24 +14,6 @@ const getProduct = async (id) => {
     return docSnapshot.data()
 }
 
-export async function generateMetadata({ params, searchParams }, parent) {
-    return {
-        title: `BeeWaxed - ${params.id}`,
-    }
-}
-
-/* export async function generateStaticParams() {
-    return [
-        { id: 'Yummy' },
-        { id: 'Asensia' },
-        { id: 'Seymour' },
-        { id: 'Bonnie' },
-        { id: 'Liria' },
-        { id: 'O.J.' },
-        { id: 'Spooky' },
-        { id: 'Freya' },
-    ]
-} */
 
 
 const Detail = async ({ params }) => {
