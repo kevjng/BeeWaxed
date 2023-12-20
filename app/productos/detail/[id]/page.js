@@ -2,11 +2,11 @@ import { db } from "../../../../firebase/config"
 import { doc, getDoc } from "firebase/firestore"
 
 import GoBack from "../../../components/ui/GoBack"
-import Counter from "../../../components/ui/Counter"
+
 import ProductDetail from "../../../components/products/ProductDetail"
 
 import Image from "next/image"
-import QtySelector from "../../../components/products/QtySelector"
+
 
 const getProduct = async (id) => {
     const docRef = doc(db, 'productos', id)

@@ -65,7 +65,7 @@ const CreateForm = () => {
                 <label>Imagen: </label>
                 <input
                     type="file"
-                    allowMultiple={false}
+                    allowmultiple={"false"}
                     onChange={(e) => setFile(e.target.files[0])}
                     className="p-2 rounded w-full border border-blue-100 block my-4 text-white"
                 />
