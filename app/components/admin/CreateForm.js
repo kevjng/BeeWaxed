@@ -45,8 +45,12 @@ const CreateForm = () => {
     }
 
     return (
-        <div className="container m-auto mt-36 max-w-lg">
-            <GoBack/>
+        <div className="container m-auto mt-32 max-w-lg text-left">
+            <GoBack />
+
+            <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl my-10 text-center">Formulario de Ingreso de producto</h2>
+
+            
             <form onSubmit={handleSubmit} className="my-12">
                 <label>Slug: </label>
                 <input
@@ -114,8 +118,11 @@ const CreateForm = () => {
                     onChange={handleChange}
                 />
 
-                <Boton type="submit">Enviar</Boton>
+                <Boton type="submit" className="bg-blue-500">Agregar Producto</Boton>
             </form>
+
+            
+
         </div>
     )
 }

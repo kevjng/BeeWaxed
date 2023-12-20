@@ -36,7 +36,7 @@ const RegistrationForm = () => {
     };
 
     return (
-        <div className="inset-0 z-10 flex justify-center items-center h-screen">
+        <div className="inset-0 z-10 flex justify-center items-center my-10">
             <form onSubmit={handleSubmit} className="bg-gray-800 py-4 px-6 rounded-xl max-w-md w-full">
                 <h2>Registro</h2>
                 <input
@@ -57,7 +57,7 @@ const RegistrationForm = () => {
                     name="password"
                     onChange={handleChange}
                 />
-                <Boton type="submit" className="mr-4 bg-green-400" disabled={isLoading}>
+                <Boton type="submit" className="mr-4 !bg-green-600" disabled={isLoading}>
                     {isLoading ? "Cargando..." : "Registrarme"}
                 </Boton>
             </form>

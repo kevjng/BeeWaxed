@@ -5,8 +5,11 @@ import { useAuthContext } from "../../../contexts/AuthContext";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+
 const LoginForm = () => {
-    const { loginUser } = useAuthContext();
+    const { loginUser, googleLogin } = useAuthContext();
     const [values, setValues] = useState({
         email: "",
         password: "",
@@ -26,7 +29,7 @@ const LoginForm = () => {
 
         try {
             await loginUser(values);
-            
+
         } catch (error) {
             toast.error(`Error: ${error.message}`);
         } finally {
@@ -35,7 +38,7 @@ const LoginForm = () => {
     };
 
     return (
-        <div className="inset-0 z-10 flex justify-center items-center h-screen">
+        <div className="inset-0 z-10 flex justify-center items-center">
             <form onSubmit={handleSubmit} className="bg-gray-800 py-4 px-6 rounded-xl max-w-md w-full">
                 <h2>Login</h2>
                 <input
@@ -59,6 +62,12 @@ const LoginForm = () => {
                 <Boton type="submit" className="mr-4 bg-green-400" disabled={isLoading}>
                     {isLoading ? "Cargando..." : "Ingresar"}
                 </Boton>
+
+                <Boton onClick={googleLogin} className="flex items-center !bg-red-700">
+                    <FontAwesomeIcon icon={faGoogle} className="mr-2" />
+                    Ingresar con Google
+                </Boton>
+
             </form>
         </div>
     );

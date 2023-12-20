@@ -53,7 +53,7 @@ const ClientForm = () => {
                 type="nombre"
                 required
                 placeholder="Nombre"
-                className="p-2 rounded w-1/2 border border-blue-100 block m-4 text-black"
+                className="p-2 rounded-full  border border-blue-100 block m-4 text-black font-bold tracking-tight"
                 name="nombre"
                 onChange={handleChange}
             />
@@ -61,7 +61,7 @@ const ClientForm = () => {
                 type="direccion"
                 required
                 placeholder="Dirección"
-                className="p-2 rounded w-1/2 border border-blue-100 block m-4 text-black"
+                className="p-2 rounded-full  border border-blue-100 block m-4 text-black font-bold tracking-tight"
                 name="direccion"
                 onChange={handleChange}
             />
@@ -69,7 +69,7 @@ const ClientForm = () => {
                 type="email"
                 required
                 placeholder="Email"
-                className="p-2 rounded w-1/2 border border-blue-100 block m-4 text-black"
+                className="p-2 rounded-full border border-blue-100 block m-4 text-black font-bold tracking-tight"
                 name="email"
                 onChange={handleChange}
             />

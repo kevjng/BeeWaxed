@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nosotros = () => {
   return (
-      <div className="container my-20 md:px-8 bg-slate-00 rounded-3xl">
+      <div className="container my-20 md:px-8 rounded-3xl">
         <div className="p-8 rounded-md justify-center text-center">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl mt-20 mb-10">Sobre Nosotros</h2>

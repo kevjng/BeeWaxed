@@ -8,7 +8,7 @@ const LogoutButton = () => {
     return (
         <>
             
-            <Boton onClick={logout} className="bg-red-500">Cerrar sesión</Boton>
+            <Boton onClick={logout} className="!bg-red-500">Cerrar sesión</Boton>
         </>
     )
 }

@@ -1,7 +1,7 @@
 "use client"
 
-import { auth } from "../firebase/config";
-import { signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { auth, provider } from "../firebase/config";
+import { signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -56,14 +56,17 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+    const googleLogin = async () => {
+        await signInWithPopup(auth, provider)
+    }
+
     useEffect(() => {
         onAuthStateChanged(auth, async (user) => {
 
             if (user) {
-                const docRef = doc(db, "roles", user.uid)
-                const userDoc = await getDoc(docRef)
+                
 
-                if (userDoc.data()?.rol === "admin") {
+                if (user) {
                     setUser({
                         logged: true,
                         email: user.email,
@@ -91,6 +94,7 @@ export const AuthProvider = ({ children }) => {
                 createUser,
                 loginUser,
                 logout,
+                googleLogin,
             }}
         >
             {children}

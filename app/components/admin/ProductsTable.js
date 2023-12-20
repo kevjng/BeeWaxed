@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { db } from "../../../firebase/config"
 import { collection, getDocs } from "firebase/firestore"
+import Boton from "../ui/Boton"
 
 
 const getAllProducts = async () => {
@@ -17,9 +18,10 @@ const ProductsTable = async () => {
         <>
             <Link
                 href={"/admin/create"}
-                className="rounded bg-blue-600 p-2 text-white"
+                className=""
             >
-                Nuevo Producto
+                <Boton className="!bg-green-500">+ Producto</Boton>
+                
             </Link>
 
             <div className="overflow-x-auto my-10">
@@ -70,6 +72,8 @@ const ProductsTable = async () => {
                                         >
                                             Eliminar
                                         </Link>
+                                     
+
                                     </td>
                                 </tr>
                             ))

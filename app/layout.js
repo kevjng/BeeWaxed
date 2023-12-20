@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <CartProvider>
 
-            <div className="flex items-start justify-center">
+            <div className="flex justify-center">
               <Navbar className="my-20"></Navbar>
               {children}
             </div>
