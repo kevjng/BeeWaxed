@@ -6,6 +6,7 @@ import Counter from "../../../components/ui/Counter"
 import ProductDetail from "../../../components/products/ProductDetail"
 
 import Image from "next/image"
+import QtySelector from "../../../components/products/QtySelector"
 
 const getProduct = async (id) => {
     const docRef = doc(db, 'productos', id)
@@ -76,7 +77,7 @@ const Detail = async ({ params }) => {
                                         </p>
 
                                         <p className="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                 stroke="blue" className="mr-2 h-5 w-5">
                                                 <path
                                                     d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z">
@@ -89,7 +90,7 @@ const Detail = async ({ params }) => {
                                         </p>
 
                                         <p className="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                 stroke="yellow" className="mr-2 h-5 w-5">
                                                 <path fillRule="evenodd"
                                                     d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
@@ -126,15 +127,13 @@ const Detail = async ({ params }) => {
                                     height={500}
                                     className="w-full rounded-3xl" />
                             </div>
-                            <Counter />
-                            <ProductDetail item= { item } />
+
+                            <ProductDetail item={item} />
 
                         </div>
                     </div>
 
                 </section>
-
-
             </div >
 
 

@@ -3,6 +3,7 @@ import Image from "next/image"
 import { db } from "../../../firebase/config"
 import { collection, getDocs } from "firebase/firestore"
 
+
 const getAllProducts = async () => {
     const productsRef = collection(db, 'productos')
     const querySnapshot = await getDocs(productsRef)
@@ -22,6 +23,7 @@ const ProductsTable = async () => {
             </Link>
 
             <div className="overflow-x-auto my-10">
+                
                 <table className="w-full text-xs text-left text-gray-300">
                     <thead className="text-xs text-gray-500 uppercase">
                         <tr>
@@ -57,14 +59,14 @@ const ProductsTable = async () => {
                                     <td className="p-2">
                                         <Link
                                             href={`/admin/edit/${item.slug}`}
-                                            className="rounded bg-green-400 p-2 text-white"
+                                            className="rounded bg-green-400 p-2 text-white mx-1"
                                         >
                                             Editar
                                         </Link>
 
                                         <Link
                                             href={`/admin/delete/${item.slug}`}
-                                            className="rounded bg-red-400 p-2 text-white"
+                                            className="rounded bg-red-400 p-2 text-white mx-1"
                                         >
                                             Eliminar
                                         </Link>
@@ -80,3 +82,4 @@ const ProductsTable = async () => {
 }
 
 export default ProductsTable
+

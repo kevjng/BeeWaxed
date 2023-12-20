@@ -26,7 +26,7 @@ const LoginForm = () => {
 
         try {
             await loginUser(values);
-            /* toast.success("Inicio de sesión exitoso"); */
+            
         } catch (error) {
             toast.error(`Error: ${error.message}`);
         } finally {

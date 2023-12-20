@@ -1,3 +1,6 @@
+import Nosotros from "../app/nosotros/page"
+import Contacto from "./contacto/page"
+import Tienda from "../app/components/products/ProductCard"
 
 export const metadata = {
   title: 'BeeWaxed - Página inicio',
@@ -28,7 +31,7 @@ export default function Home() {
         </section>
         <section id="nosotros" className=" text-white h-screen bg-yellow-900 flex">
           <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
-            Nosotros
+            <Nosotros/>
           </h1>
         </section>
         <div>
@@ -39,6 +42,7 @@ export default function Home() {
           <h1 className="m-auto font-waterfall text-7xl text-yellow-600 font-bold">
             Contacto{' '}
           </h1>
+          <Contacto/>
           </section>
          
         </div>
@@ -48,7 +52,7 @@ export default function Home() {
           className="text-white h-screen bg-green-950 text-center flex"
         >
           <h1 className="m-auto font-waterfall text-7xl text-white font-bold">
-            Tienda
+            {/* <Tienda params={slug} /> */}
           </h1>
           </section>
          

@@ -1,23 +1,28 @@
+import { useCartContext } from "../../../contexts/CartContext"
 import Boton from "../ui/Boton"
 import Image from "next/image"
 
 const CartItem = ({ item }) => {
 
+    const { removeItem } = useCartContext()
+
     return (
-        <li className="shadow flex justify-between items-center max-w-xl gap-6 p-4 my-4">
+        <li className="shadow flex justify-between items-center gap-2 my-4 flex-wrap flex-col sm:flex-row ">
             <Image
-                src={`/images/products/${item.image}`}
+                src={`${item.img}`}
                 alt={item.title}
-                width={80}
-                height={80}
+                width={200}
+                height={200}
+                className="rounded m-4"
             />
-            <div>
-                <h3>{item.title}</h3>
-                <p className="text-sm font-semibold">${item.price * item.quantity}</p>
-                <p className="text-sm">Cantidad: {item.quantity}</p>
+            <div className="text-center">
+                <p className="text-sm text-amber-400 mx-2">Detalle:</p>
+                <h3 className="mx-2">{item.title}</h3>
+                <p className="text-sm font-semibold mx-2">Precio $ {item.price}</p>
+                <p className="text-sm mx-2">Cantidad: {item.quantity}</p>
             </div>
 
-            <Boton className="bg-red-600">
+            <Boton onClick={() => removeItem(item.slug)} className="!bg-red-600">
                 <Image
                     src={'/icons/trash-icon.svg'}
                     alt="Trash icon"

@@ -27,7 +27,7 @@ const RegistrationForm = () => {
 
         try {
             await createUser(values);
-            toast.success("Usuario creado correctamente");
+            
         } catch (error) {
             toast.error(`Error: ${error.message}`);
         } finally {

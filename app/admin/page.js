@@ -77,55 +77,9 @@ const Admin = () => {
     <div className="container mx-auto my-28">
       <h1 className="text-4xl font-bold mb-8 text-center ">Panel de Administración</h1>
       <hr className='my-10'/>
-      {/* <div className="bg-gray-100 p-8 rounded-md shadow-lg">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead>
-            <tr className="bg-gray-200">
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Imagen</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Nombre</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Descripción</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Precio</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Tipo</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Stock</th>
-              <th className="py-3 px-6 text-left text-sm font-medium text-black uppercase">Acciones</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-200">
-            {productList.map((product, index) => (
-              <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                <td className="py-4 px-6 whitespace-nowrap text-black">
-                  <img src={product.img} alt={product.title} className="w-16 h-16 object-cover rounded" />
-                </td>
-                <td className="py-4 px-6 text-black">{product.title}</td>
-                <td className="py-4 px-6 text-black">{product.desc}</td>
-                <td className="py-4 px-6 text-black">${product.price}</td>
-                <td className="py-4 px-6 text-black">{product.tipo}</td>
-                <td className="py-4 px-6 text-black">
-                  {product.stock}
-                </td>
-                <td className="py-4 px-6 text-black flex items-center space-x-3">
-                  <button className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300" alt="Agregar">
-                    <FaPlus />
-                  </button>
-                  <button className="bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring focus:border-yellow-300" alt="Editar">
-                    <FaEdit />
-                  </button>
-                  <button className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-red-300" alt="Eliminar">
-                    <FaTrashAlt />
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div> */}
-
+     
       <LogoutButton />
       <ProductsTable />
-
-
-
-
 
     </div>
   );

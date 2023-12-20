@@ -2,8 +2,6 @@ import React from 'react';
 
 const Nosotros = () => {
   return (
-    <>
-
       <div className="container my-20 md:px-8 bg-slate-00 rounded-3xl">
         <div className="p-8 rounded-md justify-center text-center">
           <div className="mx-auto max-w-2xl text-center">
@@ -95,7 +93,7 @@ const Nosotros = () => {
 
       </div>
 
-    </>
+    
   );
 };
 

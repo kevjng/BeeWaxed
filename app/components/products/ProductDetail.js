@@ -1,21 +1,21 @@
 "use client"
 
 import { useCartContext } from "../../../contexts/CartContext"
-import Boton from "../ui/Boton"
+import QtySelector from "../../components/products/QtySelector"
 
 
 
 
 const ProductDetail = ({ item }) => {
 
-    console.log(item)
+    /* console.log(item) */
 
     const { addToCart } = useCartContext()
-    
-  
+
+
     return (
         <div className="">
-            <Boton onClick={() => addToCart(item)}>Agregar al carrito</Boton>
+            <QtySelector item={item} />
         </div>
     )
 }
