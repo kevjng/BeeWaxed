@@ -82,12 +82,12 @@ const Admin = () => {
           <p className="mt-2 text-lg leading-8 text-gray-400">Ingresá, modificá y eliminá tus productos.</p>
         </div>
       </div>
-
-
       <hr className='my-2' />
 
       <LogoutButton />
       <ProductsTable />
+
+
     </div>
 
   );

@@ -33,9 +33,9 @@ const ProductsTable = async () => {
                             <th scope="col" className="px-3 py-2">Precio</th>
                             <th scope="col" className="px-3 py-2">Stock</th>
                             <th scope="col" className="px-3 py-2">Tipo</th>
-                            <th scope="col" className="px-3 py-2">Img</th>
+                            <th scope="col" className="px-3 py-2">Imagen</th>
                             <th scope="col" className="px-3 py-2">Slug</th>
-                            <th scope="col" className="px-3 py-2">Desc</th>
+                            <th scope="col" className="px-3 py-2">Descripcion</th>
                             <th scope="col" className="px-3 py-2">Acciones</th>
                         </tr>
                     </thead>
