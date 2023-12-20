@@ -20,7 +20,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     }
 }
 
-export async function generateStaticParams() {
+/* export async function generateStaticParams() {
     return [
         { id: 'Yummy' },
         { id: 'Asensia' },
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
         { id: 'Spooky' },
         { id: 'Freya' },
     ]
-}
+} */
 
 
 const Detail = async ({ params }) => {
