@@ -2,13 +2,9 @@ import ProductDetail from "../../../components/products/ProductDetail"
 import { db } from "../../../../firebase/config"
 import { doc, getDoc } from "firebase/firestore"
 
-import GoBack from "../../../components/ui/GoBack"
 
-import Image from "next/image"
-
-
-const getProduct = async (id) => {
-    const docRef = doc(db, 'productos', id)
+const getProduct = async (slug) => {
+    const docRef = doc(db, 'productos', slug)
     const docSnapshot = await getDoc(docRef)
 
     return docSnapshot.data()
@@ -17,15 +13,14 @@ const getProduct = async (id) => {
 
 
 const Detail = async ({ params }) => {
-    const { id } = params
+    const { slug } = params
 
-    const item = await getProduct(id)
-    /* console.log(item)*/
+    const item = await getProduct(slug)
+    
     
     return (
         <div className="container m-auto mt-24 ">
 
-            {/* <h2 className="text-4x1 text-bold text-yellow-300 my-4">Detalle de Producto</h2> */}
 
             < div className="container my-24 mx-auto md:px-6" >
 
