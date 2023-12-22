@@ -1,6 +1,7 @@
-import Nosotros from "../app/nosotros/page"
-import Contacto from "./contacto/page"
-import Tienda from "../app/components/products/ProductCard"
+import Nosotros from "../app/nosotros/page";
+import Contacto from "./contacto/page";
+import Tienda from "../app/productos/detail/loading";
+import Hero from "../app/Hero/page"
 
 export const metadata = {
   title: 'BeeWaxed - Página inicio',
@@ -12,52 +13,36 @@ export const metadata = {
     type: 'article',
     authors: ['kvj'],
   }
-}
-
-
+};
 
 export default function Home() {
   return (
+    <div className="container">
 
-   
-      <div className="container">
+      {/* Sección Hero */}
+      <Hero/>
 
-        <section
-          id="Inicio"
-          className="text-white h-screen bg-black text-center flex"
-        >
-          <h1 className="m-auto font-waterfall text-7xl text-yellow-600 font-bold ">
-            Inicio
-          </h1>
-        </section>
+      {/* Sección Nosotros */}
+      <section id="nosotros" className="text-white flex">
+        <div className="">
+          <Nosotros />
+        </div>
+      </section>
 
-        <section id="nosotros" className=" text-white flex ">
-          <div className="">
-            <Nosotros />
-          </div>
-        </section>
-
-
+      {/* Sección Contacto */}
       <section id="contacto" className="">
-          <div className="">
-            <Contacto />
-          </div>
-        </section>
+        <div className="">
+          <Contacto />
+        </div>
+      </section>
 
-      
-      <div className="container">
-        <section id="tienda" className="text-white h-screen bg-green-950 text-center flex">
+      {/* Sección Tienda */}
+      <section id="tienda" className="">
+        <div className="">
+          <Tienda />
+        </div>
+      </section>
 
-          {/* <Tienda/> */}
-
-        </section>
-
-      </div>
-
-      </div>
-    
-
-
-
-  )
+    </div>
+  );
 }
