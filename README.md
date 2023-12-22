@@ -1,6 +1,6 @@
 # BeeWaxed 💎 
 
-Para loguearte en la aplicacion al panel de administracion:
+Para loguearte en el panel de administracion de la aplicación:
 
 user: admin@admin.com
 
