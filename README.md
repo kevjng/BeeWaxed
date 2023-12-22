@@ -29,8 +29,7 @@ password: 123456
 
 >**Material UI:**
 
-<img width="270" alt="firebase" src="https://github.com/kevjng/BeeWaxed/assets/54695712/d45b611d-e1d9-4a43-909f-b6ef9f2a2a4e">
-
+<img width="200" alt="firebase" src="https://github.com/kevjng/BeeWaxed/assets/54695712/13320164-c7d2-43b2-97aa-ca6d27c44e50">
 
 
 by ***{ kvj }.***
