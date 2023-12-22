@@ -56,7 +56,7 @@ const LoginForm = () => {
                 </Boton>
             </div>
 
-            <form onSubmit={handleSubmit} className="bg-gray-800 py-4 px-6 rounded-xl max-w-md w-full">
+            <form onSubmit={handleSubmit} className="container bg-gray-800 py-4 px-6 rounded-xl ">
                 <h2>{isLogin ? "Login" : "Registro"}</h2>
                 <input
                     type="email"
