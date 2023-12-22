@@ -31,7 +31,7 @@ const DeleteProduct = ({ item }) => {
             toast.success('Producto eliminado correctamente');
             router.back();
         } catch (error) {
-            console.error('Error al eliminar el producto', error);
+            /* console.error('Error al eliminar el producto', error); */
             toast.error('Error al eliminar el producto');
         } finally {
             setIsDeleting(false);
@@ -44,7 +44,7 @@ const DeleteProduct = ({ item }) => {
             <div className="container m-auto mt-32 max-w-lg text-left">
 
                 <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl my-10 text-center">
-                    ¿Estás seguro que deseas eliminar el producto "{item.title}"?
+                    `¿Estás seguro que deseas eliminar el producto ${item.title}`?
                 </h2>
 
                 <div className="flex justify-center">

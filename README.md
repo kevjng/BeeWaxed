@@ -1,12 +1,12 @@
 # BeeWaxed 💎 
 
-[!IMPORTANT] Para loguearte en la aplicacion al panel de administracion:
+Para loguearte en la aplicacion al panel de administracion:
 
 user: admin@admin.com
 
 password: 123456
 
-➡️ LiveView in [ *Vercel*](https://chakra-ui-videoclub-3.vercel.app "Vercel")
+➡️ LiveView in [ *Vercel*](https://bee-waxed.vercel.app/ "Vercel")
 
 ### Tecnologias Utilizadas
 
