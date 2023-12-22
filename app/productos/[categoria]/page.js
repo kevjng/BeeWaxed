@@ -53,8 +53,8 @@ const Productos = ({ params }) => {
         <main className="container my-5" >
 
             <div className="flex gap-10">
-
                 <CategoriesMenu />
+
 
                 <Suspense fallback={
                     <div className="text-yellow-400 w-full h-full">
