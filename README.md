@@ -16,11 +16,11 @@ password: 123456
 
 >***Biblioteca Javascript:***
 
-<img width="100" alt="vsc" src="https://user-images.githubusercontent.com/54695712/193309633-e1ad69aa-5e23-44c1-b754-1feb6b386b16.png">
+<img width="200" alt="vsc" src="https://github.com/kevjng/BeeWaxed/assets/54695712/7c3259f9-7b6c-46bb-9b3e-ed0c046b20fd">
 
 >**Editor de código:**
 
-<img width="90" alt="vsc" src="https://github.com/kevjng/BeeWaxed/assets/54695712/7c3259f9-7b6c-46bb-9b3e-ed0c046b20fd">
+<img width="90" alt="vsc" src="https://user-images.githubusercontent.com/54695712/193314394-964395c9-65ca-4d33-bb10-514fe608772c.png">
 
 
 >**Base de datos NoSQL:**
