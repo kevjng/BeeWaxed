@@ -29,7 +29,7 @@ password: 123456
 
 >**Material UI:**
 
-<img width="200" alt="chakra" src="https://user-images.githubusercontent.com/54695712/193312812-c8a6957e-3a32-49da-a432-b095d1d2f0bf.png">
+<img width="270" alt="firebase" src="https://github.com/kevjng/BeeWaxed/assets/54695712/d45b611d-e1d9-4a43-909f-b6ef9f2a2a4e">
 
 
 
