@@ -1,6 +1,6 @@
-# BeeWaxed 💎 
+# BeeWaxed ✨
 
-Para loguearte en la aplicacion al panel de administracion:
+Para loguearte en el panel de administracion de la aplicación:
 
 user: admin@admin.com
 
@@ -16,11 +16,12 @@ password: 123456
 
 >***Biblioteca Javascript:***
 
-<img width="100" alt="vsc" src="https://user-images.githubusercontent.com/54695712/193309633-e1ad69aa-5e23-44c1-b754-1feb6b386b16.png">
+<img width="200" alt="vsc" src="https://github.com/kevjng/BeeWaxed/assets/54695712/7c3259f9-7b6c-46bb-9b3e-ed0c046b20fd">
 
 >**Editor de código:**
 
 <img width="90" alt="vsc" src="https://user-images.githubusercontent.com/54695712/193314394-964395c9-65ca-4d33-bb10-514fe608772c.png">
+
 
 >**Base de datos NoSQL:**
 
@@ -28,8 +29,9 @@ password: 123456
 
 >**Material UI:**
 
-<img width="200" alt="chakra" src="https://user-images.githubusercontent.com/54695712/193312812-c8a6957e-3a32-49da-a432-b095d1d2f0bf.png">
+<img width="200" alt="tailwind" src="https://github.com/kevjng/BeeWaxed/assets/54695712/4e81cbbc-f0ed-413c-b89b-40e49b523877">
 
 
+by ***{ kvj }.
 
-by ***{ kvj }.***
+

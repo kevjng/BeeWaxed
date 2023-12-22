@@ -4,16 +4,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from "next/navigation";
-import { IconButton } from "@material-tailwind/react";
+
 
 import CartWidget from "../../components/ui/CartWidget"
+import AdminWidget from "../../components/ui/AdminWidget"
 
 const links = [
   { label: "Inicio", href: "/", },
   { label: "Nosotros", href: "/nosotros", },
   { label: "Contacto", href: "/contacto", },
   { label: "Tienda", href: "/productos/todos", },
-  { label: "Admin", href: "/admin", },
+  
   
 ];
 
@@ -93,9 +94,13 @@ function NavBar() {
                     </Link>
                   </li>
                 ))}
+                <li onClick={() => setNavbar(!navbar)} className='pb-6 text-xl text-white py-2 px-6 border-b-2 md:border-b-0  hover:bg-blue-500  border-blue-600  md:hover:text-yellow-400 md:hover:bg-transparent hover:translate-y-1 transition-all flex justify-center'>
+                  <AdminWidget ></AdminWidget>
+                </li>
                 <li onClick={() => setNavbar(!navbar)} className='pb-6 text-xl text-white py-2 px-6 border-b-2 md:border-b-0  hover:bg-green-500  border-green-600  md:hover:text-yellow-400 md:hover:bg-transparent hover:translate-y-1 transition-all flex justify-center'>
                   <CartWidget ></CartWidget>
                 </li>
+                 
               </ul>
               <ul>
               </ul>
