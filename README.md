@@ -20,7 +20,8 @@ password: 123456
 
 >**Editor de código:**
 
-<img width="90" alt="vsc" src="https://user-images.githubusercontent.com/54695712/193314394-964395c9-65ca-4d33-bb10-514fe608772c.png">
+<img width="90" alt="vsc" src="https://github.com/kevjng/BeeWaxed/assets/54695712/7c3259f9-7b6c-46bb-9b3e-ed0c046b20fd">
+
 
 >**Base de datos NoSQL:**
 
