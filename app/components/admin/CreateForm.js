@@ -8,6 +8,10 @@ import { doc, setDoc } from "firebase/firestore"
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import { db, storage } from "../../../firebase/config"
 
+import { useRouter } from "next/navigation"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const createProduct = async (values, file) => {
     const storageRef = ref(storage, values.slug)
     const fileSnapshot = await uploadBytes(storageRef, file)
@@ -22,6 +26,10 @@ const createProduct = async (values, file) => {
 }
 
 const CreateForm = () => {
+    
+    const router = useRouter();
+
+
     const [values, setValues] = useState({
         title: '',
         desc: '',
@@ -40,9 +48,18 @@ const CreateForm = () => {
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        await createProduct(values, file)
-    }
+        e.preventDefault();
+        try {
+            await createProduct(values, file);
+            toast.success('Producto agregado correctamente');
+
+            router.back();
+        } catch (error) {
+            /* console.error('Error al agregar el producto', error); */
+
+            toast.error('Error al agregar el producto');
+        }
+    };
 
     return (
         <div className="container m-auto mt-32 max-w-lg text-left">
@@ -50,8 +67,8 @@ const CreateForm = () => {
 
             <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl my-10 text-center">Formulario de Ingreso de producto</h2>
 
-            
-            <form onSubmit={handleSubmit} className="my-12">
+
+            <form onSubmit={handleSubmit} className="my-12 mx-4">
                 <label>Slug: </label>
                 <input
                     type="text"
@@ -114,14 +131,14 @@ const CreateForm = () => {
                 <textarea
                     value={values.desc}
                     className="resize-none w-full h-24 p-2 rounded border block border-blue-100 my-4 text-black"
-                    name="desc "
+                    name="desc"
                     onChange={handleChange}
                 />
 
-                <Boton type="submit" className="bg-blue-500">Agregar Producto</Boton>
+                <Boton type="submit" className="!bg-green-500">Agregar Producto</Boton>
             </form>
 
-            
+
 
         </div>
     )

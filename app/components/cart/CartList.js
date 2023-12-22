@@ -14,7 +14,7 @@ const CartList = () => {
                 }
             </ul>
 
-            <p className="text-2xl my-4 pb-4 text-right mx-2">Total: ${totalPrice()}</p>
+            <p className="text-xl my-4 pb-4 text-right mx-2">Total: ${totalPrice()}</p>
         </div>
     )
 }

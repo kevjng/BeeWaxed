@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Boton from "../ui/Boton";
 import { useAuthContext } from "../../../contexts/AuthContext";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 const RegistrationForm = () => {
     const { createUser } = useAuthContext();
@@ -21,19 +20,7 @@ const RegistrationForm = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-
-        try {
-            await createUser(values);
-            
-        } catch (error) {
-            toast.error(`Error: ${error.message}`);
-        } finally {
-            setIsLoading(false);
-        }
-    };
+   
 
     return (
         <div className="inset-0 z-10 flex justify-center items-center my-10">

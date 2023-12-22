@@ -1,16 +1,20 @@
 "use client"
-import { useAuthContext } from "../../../contexts/AuthContext"
-import Boton from "../ui/Boton"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { useAuthContext } from "../../../contexts/AuthContext";
+import Boton from "../ui/Boton";
 
 const LogoutButton = () => {
-    const { logout } = useAuthContext()
+    const { logout } = useAuthContext();
 
     return (
         <>
-            
-            <Boton onClick={logout} className="!bg-red-500">Cerrar sesión</Boton>
+            <Boton onClick={logout} className="!bg-red-500">
+                <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />
+                Cerrar sesión
+            </Boton>
         </>
-    )
-}
+    );
+};
 
-export default LogoutButton
+export default LogoutButton;

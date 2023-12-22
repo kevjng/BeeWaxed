@@ -1,10 +1,10 @@
 import LoginForm from "../../components/auth/LoginForm"
-import RegistrationForm from "../../components/auth/RegistrationForm"
+
 
 const LoginPage = () => {
 
     return (
-        <div className="container my-20 md:px-8 rounded-3xl">
+        <div className="container my-20 justify-center h-screen">
 
             <div className="p-8 rounded-md justify-center text-center">
                 <div className="mx-auto max-w-2xl text-center">
@@ -14,7 +14,7 @@ const LoginPage = () => {
             </div>
 
             <LoginForm />
-            <RegistrationForm/>
+            
         </div>
     )
 }

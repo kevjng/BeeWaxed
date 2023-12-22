@@ -7,7 +7,7 @@ const CartWidget = () => {
     const { totalQty } = useCartContext()
 
     return (
-        <Link href={"/cart"} className={`text-base text-slate-100 p-3 flex items-center hover:translate-x-1 transition`}>
+        <Link href={"/cart"} className={`text-base text-slate-100 p-3 flex items-center transition`}>
             <Image
                 src={"/icons/cart-icon.svg"}
                 alt="Cart icon"

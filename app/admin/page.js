@@ -80,11 +80,11 @@ const Admin = () => {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl mt-20">Panel de Administración</h2>
           <p className="mt-2 text-lg leading-8 text-gray-400">Ingresá, modificá y eliminá tus productos.</p>
+          <LogoutButton />
         </div>
       </div>
-      <hr className='my-2' />
-
-      <LogoutButton />
+      <hr/>
+    
       <ProductsTable />
 
 

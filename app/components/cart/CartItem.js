@@ -13,7 +13,7 @@ const CartItem = ({ item }) => {
                 alt={item.title}
                 width={200}
                 height={200}
-                className="rounded m-4"
+                className="rounded-full m-4"
             />
             <div className="text-center">
                 <p className="text-sm text-amber-400 mx-2">Detalle:</p>
