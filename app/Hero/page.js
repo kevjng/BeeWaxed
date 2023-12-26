@@ -3,7 +3,7 @@ import Boton from "../components/ui/Boton";
 
 const page = () => {
   return (
-      <section id="hero" className="container my-60 md:px-8 rounded-3xl items-center">
+      <section id="hero" className="container my-72 rounded-3xl items-center">
           <div className="text-center text-white">
               <h1 className="text-5xl font-extrabold mb-4">Bienvenido a BeeWaxed</h1>
               <p className="text-lg">Descubre nuestra colección única de productos sostenibles y amigables con el medio ambiente.</p>
