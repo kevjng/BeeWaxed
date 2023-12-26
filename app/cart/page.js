@@ -5,7 +5,7 @@ import GoBack from "../components/ui/GoBack"
 const CartPage = () => {
 
     return (
-        <main className="mt-36">
+        <main className="mt-36 h-screen">
             <GoBack/>
             <h2 className="text-3xl border-b py-4 mx-2 text-center font-bold tracking-tight text-gray-200">Tú Pedido</h2>
             
