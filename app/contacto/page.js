@@ -1,11 +1,6 @@
 "use client"
 
 import React from "react";
-import { Button, Input } from "@nextui-org/react";
-import { Textarea } from "@nextui-org/react";
-
-import { useState } from "react"
-import Boton from "../components/ui/Boton"
 import ContactForm from "../contacto/ContactForm"
 
 

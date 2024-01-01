@@ -1,6 +1,21 @@
 import React from 'react';
 
+export const metadata = {
+  title: 'BeeWaxed - Nosotros',
+  description: 'App de BeeWaxed 2023',
+  
+  openGraph: {
+    title: 'BeeWaxed - Nosotros',
+    description: 'App de BeeWaxed 2023',
+    type: 'article',
+    authors: ['kvj'],
+  }
+};
+
 const Nosotros = () => {
+
+
+
   return (
       <div className="container my-20 md:px-8 rounded-3xl">
         <div className="p-8 rounded-md justify-center text-center">
