@@ -48,7 +48,7 @@ const ClientForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="container w-full flex justify-between items-center gap-2 my-4 flex-wrap flex-col sm:flex-row mb-36">
+        <form onSubmit={handleSubmit} className="container w-full flex justify-between items-center gap-2 flex-wrap flex-col sm:flex-row">
             <input
                 type="nombre"
                 required
