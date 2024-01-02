@@ -9,8 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GoBack from '../ui/GoBack';
 import Boton from '../ui/Boton';
-import { Button } from '@nextui-org/react';
-import Image from 'next/image';
+
 
 const DeleteProduct = ({ item }) => {
     const router = useRouter();
@@ -44,7 +43,7 @@ const DeleteProduct = ({ item }) => {
             <div className="container m-auto mt-32 max-w-lg text-left">
 
                 <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl my-10 text-center">
-                    `¿Estás seguro que deseas eliminar el producto ${item.title}`?
+                    ¿Estás seguro que deseas eliminar el producto {item.title}?
                 </h2>
 
                 <div className="flex justify-center">
