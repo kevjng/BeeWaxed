@@ -3,7 +3,7 @@ import DeleteProduct from "../../../components/admin/DeleteProduct"
 const DeleteProductPage = async ({ params }) => {
     const { slug } = params
 
-    const item = await fetch(`http://localhost:3000/api/product/${slug}`, {
+    const item = await fetch(`https://bee-waxed.vercel.app/api/product/${slug}`, {
         cache: 'no-store'
     }).then(res => res.json())
 
